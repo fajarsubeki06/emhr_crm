@@ -119,7 +119,8 @@
                                         </div>
                                     </div>
                                     <div class="carousel-item slider-img">
-                                        <div class="card cardproduct shadow border-0 mb-3 col-12 col-sm-6 col-md-4 col-lg-3" style="border-radius: 13px;">
+                                        <div class="card cardproduct shadow border-0 mb-3 col-12 col-sm-6 col-md-4 col-lg-3"
+                                             style="border-radius: 13px;">
                                             <div class="card-body p-4">
                                                 <img src="https://www.em-hr.co.id/landing-page/2019-05-28/attendance.png"
                                                      alt="" class="img-fluid mb-3"/>
@@ -129,7 +130,8 @@
                                         </div>
                                     </div>
                                     <div class="carousel-item slider-img">
-                                        <div class="card cardproduct shadow border-0 mb-3 col-12 col-sm-6 col-md-4 col-lg-3" style="border-radius: 13px;">
+                                        <div class="card cardproduct shadow border-0 mb-3 col-12 col-sm-6 col-md-4 col-lg-3"
+                                             style="border-radius: 13px;">
                                             <div class="card-body p-4">
                                                 <img src="https://www.em-hr.co.id/landing-page/2019-05-28/attendance.png"
                                                      alt="" class="img-fluid mb-3"/>
@@ -139,7 +141,8 @@
                                         </div>
                                     </div>
                                     <div class="carousel-item slider-img">
-                                        <div class="card cardproduct shadow border-0 mb-3 col-12 col-sm-6 col-md-4 col-lg-3" style="border-radius: 13px;">
+                                        <div class="card cardproduct shadow border-0 mb-3 col-12 col-sm-6 col-md-4 col-lg-3"
+                                             style="border-radius: 13px;">
                                             <div class="card-body p-4">
                                                 <img src="https://www.em-hr.co.id/landing-page/2019-05-28/attendance.png"
                                                      alt="" class="img-fluid mb-3"/>
@@ -149,7 +152,8 @@
                                         </div>
                                     </div>
                                     <div class="carousel-item slider-img">
-                                        <div class="card cardproduct shadow border-0 mb-3 col-12 col-sm-6 col-md-4 col-lg-3" style="border-radius: 13px;">
+                                        <div class="card cardproduct shadow border-0 mb-3 col-12 col-sm-6 col-md-4 col-lg-3"
+                                             style="border-radius: 13px;">
                                             <div class="card-body p-4">
                                                 <img src="https://www.em-hr.co.id/landing-page/2019-05-28/attendance.png"
                                                      alt="" class="img-fluid mb-3"/>
@@ -158,8 +162,9 @@
                                             </div>
                                         </div>
                                     </div>
-                                     <div class="carousel-item slider-img">
-                                        <div class="card cardproduct shadow border-0 mb-3 col-12 col-sm-6 col-md-4 col-lg-3" style="border-radius: 13px;">
+                                    <div class="carousel-item slider-img">
+                                        <div class="card cardproduct shadow border-0 mb-3 col-12 col-sm-6 col-md-4 col-lg-3"
+                                             style="border-radius: 13px;">
                                             <div class="card-body p-4">
                                                 <img src="https://www.em-hr.co.id/landing-page/2019-05-28/attendance.png"
                                                      alt="" class="img-fluid mb-3"/>
@@ -194,17 +199,9 @@
                         <div class="row">
                             <t t-foreach="customer" t-as="cst">
                                 <div class="col-12 col-md-12 col-lg-3 col-xl-3">
-                                    <!-- Card-->
-                                    <div class="card shadow border-0 mb-3" style="border-radius: 13px;">
-                                        <div class="card-body p-4">
-                                            <img t-attf-src="data:image/*;base64, {{cst.img_customer}}" alt=""
-                                                 class="img-responsive d-block mx-auto mb-3"
-                                                 style="height: 130px; width: 150px;"/>
-                                            <p class="card-text text-center">
-                                                <t t-esc="cst.name"/>
-                                            </p>
-                                        </div>
-                                    </div>
+                                    <img t-attf-src="data:image/*;base64, {{cst.img_customer}}" alt=""
+                                         class="img-responsive d-block mx-auto mb-3"
+                                         style="height: 130px; width: 150px;"/>
                                 </div>
                             </t>
                         </div>

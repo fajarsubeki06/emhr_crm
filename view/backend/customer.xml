@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="emhr_customer_form_view" model="ir.ui.view">
+        <field name="name">Customer</field>
+        <field name="model">emhr.customer</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="img_customer" widget="image" class="oe_left oe_avatar"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="emhr_customer_tree_view" model="ir.ui.view">
+        <field name="name">Customer</field>
+        <field name="model">emhr.customer</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="img_customer" widget="image" class="oe_left oe_avatar" height="150" width="200"/>
+            </tree>
+        </field>
+    </record>
+
+</odoo>

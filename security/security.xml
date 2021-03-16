@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="group_manager" model="res.groups">
+        <field name="name">EM-HR / Manager</field>
+    </record>
+
+    <record id="group_user" model="res.groups">
+        <field name="name">EM-HR / User</field>
+    </record>
+
+    <!-- access rules -->
+    <record id="only_responsible_can_modify" model="ir.rule">
+        <field name="name">Cuman penanggung jawab yang bisa edit web setting</field>
+        <field name="model_id" ref="model_emhr_web_setting"/>
+        <field name="groups" eval="[(4, ref('group_manager'))]"/>
+        <field name="perm_read" eval="0"/>
+        <field name="perm_write" eval="1"/>
+        <field name="perm_create" eval="0"/>
+        <field name="perm_unlink" eval="1"/>
+    </record>
+</odoo>

@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="eht_home" name="Home">
+        <t t-call="website.layout">
+            <div class="mt-5 mb-5">
+                <t t-set="websetting" t-value="request.env['emhr.web_setting'].search([])"/>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <br/>
+                            <div class="col-md-9">
+                                <p>
+                                    <h2 class="eht_title font-weight-bold">
+                                        <t t-if="websetting.title_desc is False">
+                                            HRIS Application System The Best and Complete
+                                        </t>
+                                        <t t-if="websetting.title_desc is not False">
+                                            <t t-esc="websetting.title_desc"/>
+                                        </t>
+                                    </h2>
+                                </p>
+                            </div>
+                            <div class="col-md-12">
+                                <p>
+                                    <h4>
+                                        <t t-if="websetting.desc is False">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                            tempor
+                                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                            consequat.
+                                            Excepteur sint occaecat cupidatat non proident.
+                                        </t>
+                                        <t t-if="websetting.desc is not False">
+                                            <t t-esc="websetting.desc"/>
+                                        </t>
+                                    </h4>
+                                </p>
+                                <br/>
+                                <p>
+                                    <a t-attf-href="/demo_trial">
+                                        <button class="btn-trial">Trial &#38; Buy</button>
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 d-flex flex-row justify-content-center">
+                            <br/>
+                            <div class="container-fluid">
+                                <img src="/em-hr_crm/static/images/play.png" class="img-fluid mx-auto d-block imgplay"
+                                     data-toggle="modal" data-target="#exampleModalCenter"/>
+                                <t t-if="websetting.img_front is False">
+                                    <img src="/em-hr_crm/static/images/illustration.png" alt="Los Angeles"
+                                         class="img-fluid mx-auto d-block mb-3 w-75" style="height: 375px;"/>
+                                </t>
+                                <t t-if="websetting.img_front is not False">
+                                    <img t-attf-src="data:image/*;base64, {{websetting.img_front}}" alt="Los Angeles"
+                                         class="img-fluid mx-auto d-block mb-3 w-75" style="height: 375px;"
+                                    />
+                                </t>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+                         aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <div class="embed-responsive embed-responsive-16by9">
+                                        <iframe id="yt-player" class="embed-responsive-item"
+                                                t-attf-src="{{websetting.video_url}}"/>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-feature mt-5">
+                    <div class="container pt-5 pb-5">
+                        <div class="row d-flex justify-content-center ">
+                            <h2 class="eht-title-feature">
+                                <hr class="eht-line"/>
+                                <p>
+                                    Features
+                                </p>
+                            </h2>
+                        </div>
+                        <div class="row mx-auto my-auto">
+                            <div id="recipeCarousel" class="carousel slide w-100" data-ride="carousel">
+                                <div class="carousel-inner w-100" role="listbox">
+
+                                    <!--                                    <t t-set="product"-->
+                                    <!--                                       t-value="request.env['product.template'].search([],limit=4,order='create_date desc')"/>-->
+
+                                    <!--                                    <t t-foreach="product" t-as="prd">-->
+                                    <!--                                        <div class="card shadow border-0 mb-3 d-block col-3"-->
+                                    <!--                                             style="border-radius: 13px;">-->
+                                    <!--                                            <div class="card-body p-4">-->
+                                    <!--                                                <img src="https://www.em-hr.co.id/landing-page/2019-05-28/Medical%20Reimbursement.png"-->
+                                    <!--                                                     alt="" class="img-fluid d-block mx-auto mb-3"/>-->
+                                    <!--                                                <p class="card-text text-center">Satu-->
+                                    <!--                                                </p>-->
+                                    <!--                                            </div>-->
+                                    <!--                                        </div>-->
+                                    <!--                                    </t>-->
+
+                                    <div class="carousel-item active slider-img">
+                                        <div class="card cardproduct shadow border-0 mb-3 col-12 col-sm-6 col-md-4 col-lg-3">
+                                            <div class="card-body p-4">
+                                                <img src="https://www.em-hr.co.id/landing-page/2019-05-28/attendance.png"
+                                                     alt="" class="img-fluid mb-3"/>
+                                                <p class="card-text text-center">Satu
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item slider-img">
+                                        <div class="card cardproduct shadow border-0 mb-3 col-12 col-sm-6 col-md-4 col-lg-3" style="border-radius: 13px;">
+                                            <div class="card-body p-4">
+                                                <img src="https://www.em-hr.co.id/landing-page/2019-05-28/attendance.png"
+                                                     alt="" class="img-fluid mb-3"/>
+                                                <p class="card-text text-center">Dua
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item slider-img">
+                                        <div class="card cardproduct shadow border-0 mb-3 col-12 col-sm-6 col-md-4 col-lg-3" style="border-radius: 13px;">
+                                            <div class="card-body p-4">
+                                                <img src="https://www.em-hr.co.id/landing-page/2019-05-28/attendance.png"
+                                                     alt="" class="img-fluid mb-3"/>
+                                                <p class="card-text text-center">Tiga
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item slider-img">
+                                        <div class="card cardproduct shadow border-0 mb-3 col-12 col-sm-6 col-md-4 col-lg-3" style="border-radius: 13px;">
+                                            <div class="card-body p-4">
+                                                <img src="https://www.em-hr.co.id/landing-page/2019-05-28/attendance.png"
+                                                     alt="" class="img-fluid mb-3"/>
+                                                <p class="card-text text-center">Empat
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item slider-img">
+                                        <div class="card cardproduct shadow border-0 mb-3 col-12 col-sm-6 col-md-4 col-lg-3" style="border-radius: 13px;">
+                                            <div class="card-body p-4">
+                                                <img src="https://www.em-hr.co.id/landing-page/2019-05-28/attendance.png"
+                                                     alt="" class="img-fluid mb-3"/>
+                                                <p class="card-text text-center">Lima
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                     <div class="carousel-item slider-img">
+                                        <div class="card cardproduct shadow border-0 mb-3 col-12 col-sm-6 col-md-4 col-lg-3" style="border-radius: 13px;">
+                                            <div class="card-body p-4">
+                                                <img src="https://www.em-hr.co.id/landing-page/2019-05-28/attendance.png"
+                                                     alt="" class="img-fluid mb-3"/>
+                                                <p class="card-text text-center">Enam
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#recipeCarousel" data-slide="prev">
+                                    <span class="carousel-control-prev-icon"></span>
+                                </a>
+                                <a class="carousel-control-next" href="#recipeCarousel" data-slide="next">
+                                    <span class="carousel-control-next-icon"></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br/>
+                <div class="bg-customer mt-5">
+                    <div class="container pt-5 pb-5">
+                        <div class="row d-flex justify-content-center">
+                            <h2 class="eht-title-feature">
+                                <hr class="eht-line"/>
+                                <p>
+                                    Our Customer
+                                </p>
+                            </h2>
+                        </div>
+                        <t t-set="customer" t-value="request.env['emhr.customer'].search([],order='create_date desc')"/>
+                        <div class="row">
+                            <t t-foreach="customer" t-as="cst">
+                                <div class="col-12 col-md-12 col-lg-3 col-xl-3">
+                                    <!-- Card-->
+                                    <div class="card shadow border-0 mb-3" style="border-radius: 13px;">
+                                        <div class="card-body p-4">
+                                            <img t-attf-src="data:image/*;base64, {{cst.img_customer}}" alt=""
+                                                 class="img-responsive d-block mx-auto mb-3"
+                                                 style="height: 130px; width: 150px;"/>
+                                            <p class="card-text text-center">
+                                                <t t-esc="cst.name"/>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </t>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </t>
+
+    </template>
+</odoo>

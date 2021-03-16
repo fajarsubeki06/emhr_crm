@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="action_web_setting" model="ir.actions.act_window">
+			<field name="name">Web Setting</field>
+			<field name="res_model">emhr.web_setting</field>
+			<field name="view_mode">tree,form</field>
+			<field name="help" type="html">
+              <p class="oe_view_nocontent_create">
+                Belum ada konfirugasi web setting, segara atur setting webmu
+              </p>
+				<p>Setting Web</p>
+			</field>
+		</record>
+
+		 <record id="action_customer" model="ir.actions.act_window">
+			<field name="name">Customer</field>
+			<field name="res_model">emhr.customer</field>
+			<field name="view_mode">tree,form</field>
+			<field name="help" type="html">
+              <p class="oe_view_nocontent_create">
+                Belum ada customer
+              </p>
+				<p>Tambahkan cutomer</p>
+			</field>
+		</record>
+
+        <menuitem id="emhr_system_0"
+                  name="EM-HR System"
+                  sequence="20"/>
+
+        <menuitem id="emhr_system_1"
+				  name="EM-HR System"
+				  parent="emhr_system_0"
+				  sequence="20"/>
+
+        <menuitem id="emhr_web_setting"
+				  name="Web Setting"
+				  parent="emhr_system_1"
+				  action="action_web_setting"
+				  sequence="20"/>
+
+		  <menuitem id="emhr_customer"
+				  name="Customer"
+				  parent="emhr_system_1"
+				  action="action_customer"
+				  sequence="30"/>
+
+    </data>
+</odoo>

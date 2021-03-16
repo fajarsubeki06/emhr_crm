@@ -1,0 +1,8 @@
+"id","name","model_id:id","group_id:id","perm_read","perm_write","perm_create","perm_unlink"
+
+"websetting_manager","websetting_manager","model_emhr_web_setting","group_manager",1,1,1,1
+"customer_manager","customer_manager","model_emhr_customer","group_manager",1,1,1,1
+"websetting_user","websetting_user","model_emhr_web_setting","group_user",1,1,1,0
+"customer_user","customer_user","model_emhr_customer","group_user",1,1,1,0
+"websetting_all","websetting_all","model_emhr_web_setting",,1,0,0,0
+"customer_all","customer_all","model_emhr_customer",,1,0,0,0

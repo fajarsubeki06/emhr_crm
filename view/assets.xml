@@ -12,9 +12,7 @@
 
 
 <!--            <link rel="stylesheet" href="/em-hr_crm/static/css/carousel.css"/>-->
-            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
-                  integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
-                  crossorigin="anonymous"/>
+           <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
             <script type="text/javascript" src="/em-hr_crm/static/js/crm.js"/>
 
 <!--            <script src="/em-hr_crm/static/js/jquery.backstretch.min.js"/>-->

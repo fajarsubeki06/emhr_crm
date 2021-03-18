@@ -19,6 +19,6 @@
         'security/ir.model.access.csv',
         'view/backend/customer.xml',
         'view/assets.xml',
-        'view/view_pricing.xml',
+        # 'view/view_pricing.xml',
     ],
 }

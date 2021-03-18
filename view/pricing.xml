@@ -40,25 +40,25 @@
                                  aria-labelledby="pills-silver-tab">
                                 <p class="eht-subtile font-weight-bold text-center mb-0">Memiliki kapasitas 1-25 user</p>
                                 <hr class="eht-line"/>
-                                <t t-call="em-hr_crm.ic_pricing_view"/>
+<!--                                <t t-call="em-hr_crm.ic_pricing_view"/>-->
                             </div>
                             <div class="tab-pane fade" id="pills-gold" role="tabpanel"
                                  aria-labelledby="pills-gold-tab">
                                 <p class="eht-subtile font-weight-bold text-center mb-0">Memiliki kapasitas 1-25 user</p>
                                 <hr class="eht-line"/>
-                                <t t-call="em-hr_crm.ic_pricing_view"/>
+<!--                                <t t-call="em-hr_crm.ic_pricing_view"/>-->
                             </div>
                             <div class="tab-pane fade" id="pills-platinum" role="tabpanel"
                                  aria-labelledby="pills-platinum-tab">
                                 <p class="eht-subtile font-weight-bold text-center mb-0">Memiliki kapasitas 1-25 user</p>
                                 <hr class="eht-line"/>
-                                <t t-call="em-hr_crm.ic_pricing_view"/>
+<!--                                <t t-call="em-hr_crm.ic_pricing_view"/>-->
                             </div>
                             <div class="tab-pane fade" id="pills-custom" role="tabpanel"
                                  aria-labelledby="pills-custom-tab">
                                 <p class="eht-subtile font-weight-bold text-center mb-0">Memiliki kapasitas 1-25 user</p>
                                 <hr class="eht-line"/>
-                                <t t-call="em-hr_crm.ic_pricing_view"/>
+<!--                                <t t-call="em-hr_crm.ic_pricing_view"/>-->
                             </div>
                         </div>
                     </div>

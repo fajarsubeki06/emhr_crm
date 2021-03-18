@@ -103,9 +103,8 @@
                                         </div>
                                         <div class="form-group text-center mb-0">
                                             <div class="col-12">
-                                                <button type="button" class="btn btn-success"
-                                                        data-toggle="modal" data-target="#exampleModalCenter">
-                                                    Lanjutkan
+                                                <button type="button" class="btn btn-success">
+                                                    Buy License
                                                 </button>
                                             </div>
                                         </div>
@@ -158,63 +157,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- Modal -->
-                <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
-                     aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title">Detail Paket Yang Didapat</h5>
-                            </div>
-                            <div class="modal-body">
-                                <div class="row justify-content-center">
-                                    <div class="col-12 col-md-12">
-                                        <div class="card shadow" style="border-radius: 13px;">
-                                            <div class="card-body">
-                                                <div class="table-responsive">
-                                                    <table class="table table-striped">
-                                                        <thead>
-                                                            <tr>
-                                                                <th>Detail</th>
-                                                                <th>Support</th>
-                                                            </tr>
-                                                        </thead>
-                                                        <tbody>
-                                                            <tr>
-                                                                <td>Attendance</td>
-                                                                <td>Mobile &#38; Web Apps</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Payrool &#38; Payment Request</td>
-                                                                <td>Mobile &#38; Web Apps</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Timesheet &#38; Visit</td>
-                                                                <td>Mobile &#38; Web Apps</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Medical Reimbursement &#38; Business Trip</td>
-                                                                <td>Mobile &#38; Web Apps</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Reporting Data all Module</td>
-                                                                <td>Web Apps</td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-success">Buy License</button>
-                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
             </div>
         </t>
     </template>

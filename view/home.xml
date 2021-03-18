@@ -4,7 +4,7 @@
         <t t-call="website.layout">
             <div class="mb-5">
                 <t t-set="websetting" t-value="request.env['emhr.web_setting'].search([])"/>
-                <div class="row bg_landingpage">
+                <div class="bg_landingpage">
                     <div class="container pt-5 pb-5">
                         <div class="row">
                             <div class="col-lg-7">
@@ -48,35 +48,32 @@
                             </div>
                             <div class="col-lg-5 d-flex flex-row justify-content-center">
                                 <br/>
-                                <div class="container-fluid">
-                                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                                        <div class="carousel-inner">
-                                            <div class="carousel-item active">
-                                                <img src="/em-hr_crm/static/images/play.png"
-                                                     class="img-fluid mx-auto d-block imgplay"
-                                                     data-toggle="modal" data-target="#exampleModalCenter"/>
-                                                <img t-attf-src="data:image/*;base64, {{websetting.img_front}}"
-                                                     alt="Los Angeles"
-                                                     class="img-fluid mx-auto d-block mb-3 w-100"
-                                                     style="height: 375px;"/>
-                                            </div>
-                                            <div class="carousel-item">
-                                                <img src="/em-hr_crm/static/images/computer.png" alt="Los Angeles"
-                                                     class="img-fluid mx-auto d-block mb-3 w-100"
-                                                     style="height: 375px;"/>
-                                            </div>
-                                            <div class="carousel-item">
-                                                <img src="/em-hr_crm/static/images/hp.png" alt="Los Angeles"
-                                                     class="img-fluid mx-auto d-block mb-3 w-100"
-                                                     style="height: 375px;"/>
-                                            </div>
+                                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="/em-hr_crm/static/images/play.png"
+                                                 class="img-fluid mx-auto d-block imgplay"
+                                                 data-toggle="modal" data-target="#exampleModalCenter"/>
+                                            <img t-attf-src="data:image/*;base64, {{websetting.img_front}}"
+                                                 alt="Los Angeles"
+                                                 class="img-fluid mx-auto d-block mb-3 w-100"
+                                                 style="height: 375px;"/>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="/em-hr_crm/static/images/computer.png" alt="Los Angeles"
+                                                 class="img-fluid mx-auto d-block mb-3 w-100"
+                                                 style="height: 375px;"/>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="/em-hr_crm/static/images/hp.png" alt="Los Angeles"
+                                                 class="img-fluid mx-auto d-block mb-3 w-100"
+                                                 style="height: 375px;"/>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-
                 </div>
                 <!-- Modal -->
                 <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
@@ -106,152 +103,124 @@
                             </h2>
                         </div>
                         <div class="row mx-auto my-auto">
-                            <div class="card-deck">
-                                <div class="card cardproduct shadow border-0 mb-3 col-12 col-sm-6 col-md-4 col-lg-3">
-                                    <div class="card-body text-center">
-                                        <img src="http://drwiam.com/wp-content/uploads/2016/10/orionthemes-placeholder-image-2-1.png"
-                                             alt="" class="img-fluid mb-3 img_features"
-                                             style="height: 140px; width: 140px;"/>
-                                        <h4 class="card-title font-weight-bold">Features Title</h4>
-                                        <p class="card-text">
-                                            Employee’s Perfomance Appraisal become faster and accurate
-                                        </p>
+                            <div id="recipeCarousel" class="carousel crs slide w-100" data-ride="carousel">
+                                <div class="carousel-inner cr-inner w-100" role="listbox">
+
+                                    <!--                                    <t t-set="product"-->
+                                    <!--                                       t-value="request.env['product.template'].search([],limit=4,order='create_date desc')"/>-->
+
+                                    <!--                                    <t t-foreach="product" t-as="prd">-->
+                                    <!--                                        <div class="card shadow border-0 mb-3 d-block col-3"-->
+                                    <!--                                             style="border-radius: 13px;">-->
+                                    <!--                                            <div class="card-body p-4">-->
+                                    <!--                                                <img src="https://www.em-hr.co.id/landing-page/2019-05-28/Medical%20Reimbursement.png"-->
+                                    <!--                                                     alt="" class="img-fluid d-block mx-auto mb-3"/>-->
+                                    <!--                                                <p class="card-text text-center">Satu-->
+                                    <!--                                                </p>-->
+                                    <!--                                            </div>-->
+                                    <!--                                        </div>-->
+                                    <!--                                    </t>-->
+
+                                    <div class="card-deck">
+                                        <div class="carousel-item cr-item active slider-img">
+                                            <div class="card cardproduct shadow border-0 mb-3 col-12 col-sm-6 col-md-4 col-lg-3">
+                                                <div class="card-body text-center">
+                                                    <img src="http://drwiam.com/wp-content/uploads/2016/10/orionthemes-placeholder-image-2-1.png"
+                                                         alt="" class="img-fluid mb-3 img_features"
+                                                         style="height: 140px; width: 140px;"/>
+                                                    <h4 class="card-title font-weight-bold">Features Title</h4>
+                                                    <p class="card-text">
+                                                        Integrating several attendance devices such as finger print
+                                                        machines
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item cr-item slider-img">
+                                            <div class="card cardproduct shadow border-0 mb-3 col-12 col-sm-6 col-md-4 col-lg-3">
+                                                <div class="card-body text-center">
+                                                    <img src="http://drwiam.com/wp-content/uploads/2016/10/orionthemes-placeholder-image-2-1.png"
+                                                         alt="" class="img-fluid mb-3 img_features"
+                                                         style="height: 140px; width: 140px;"/>
+                                                    <h4 class="card-title font-weight-bold">Features Title</h4>
+                                                    <p class="card-text">
+                                                        Integrating several attendance devices such as finger print
+                                                        machines,
+                                                        mobile
+                                                        attendance is an integrated Em-HR system
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item cr-item slider-img">
+                                            <div class="card cardproduct shadow border-0 mb-3 col-12 col-sm-6 col-md-4 col-lg-3">
+                                                <div class="card-body text-center">
+                                                    <img src="http://drwiam.com/wp-content/uploads/2016/10/orionthemes-placeholder-image-2-1.png"
+                                                         alt="" class="img-fluid mb-3 img_features"
+                                                         style="height: 140px; width: 140px;"/>
+                                                    <h4 class="card-title font-weight-bold">Features Title</h4>
+                                                    <p class="card-text">
+                                                        Integrating several attendance devices such as finger print
+                                                        machines
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item cr-item slider-img">
+                                            <div class="card cardproduct shadow border-0 mb-3 col-12 col-sm-6 col-md-4 col-lg-3">
+                                                <div class="card-body text-center">
+                                                    <img src="http://drwiam.com/wp-content/uploads/2016/10/orionthemes-placeholder-image-2-1.png"
+                                                         alt="" class="img-fluid mb-3 img_features"
+                                                         style="height: 140px; width: 140px;"/>
+                                                    <h4 class="card-title font-weight-bold">Features Title</h4>
+                                                    <p class="card-text">
+                                                        Integrating several attendance devices such as finger print
+                                                        machines,
+                                                        mobile
+                                                        attendance is an integrated Em-HR system
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item cr-item slider-img">
+                                            <div class="card cardproduct shadow border-0 mb-3 col-12 col-sm-6 col-md-4 col-lg-3">
+                                                <div class="card-body text-center">
+                                                    <img src="http://drwiam.com/wp-content/uploads/2016/10/orionthemes-placeholder-image-2-1.png"
+                                                         alt="" class="img-fluid mb-3 img_features"
+                                                         style="height: 140px; width: 140px;"/>
+                                                    <h4 class="card-title font-weight-bold">Features Title</h4>
+                                                    <p class="card-text">
+                                                        Integrating several attendance devices such as finger print
+                                                        machines
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item cr-item slider-img">
+                                            <div class="card cardproduct shadow border-0 mb-3 col-12 col-sm-6 col-md-4 col-lg-3">
+                                                <div class="card-body text-center">
+                                                    <img src="http://drwiam.com/wp-content/uploads/2016/10/orionthemes-placeholder-image-2-1.png"
+                                                         alt="" class="img-fluid mb-3 img_features"
+                                                         style="height: 140px; width: 140px;"/>
+                                                    <h4 class="card-title font-weight-bold">Features Title</h4>
+                                                    <p class="card-text">
+                                                        Integrating several attendance devices such as finger print
+                                                        machines,
+                                                        mobile
+                                                        attendance is an integrated Em-HR system
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="card cardproduct shadow border-0 mb-3 col-12 col-sm-6 col-md-4 col-lg-3">
-                                    <div class="card-body text-center">
-                                        <img src="http://drwiam.com/wp-content/uploads/2016/10/orionthemes-placeholder-image-2-1.png"
-                                             alt="" class="img-fluid mb-3 img_features"
-                                             style="height: 140px; width: 140px;"/>
-                                        <h4 class="card-title font-weight-bold">Features Title</h4>
-                                        <p class="card-text">
-                                            Helping you to post job vacancies to get the best talents
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="card cardproduct shadow border-0 mb-3 col-12 col-sm-6 col-md-4 col-lg-3">
-                                    <div class="card-body text-center">
-                                        <img src="http://drwiam.com/wp-content/uploads/2016/10/orionthemes-placeholder-image-2-1.png"
-                                             alt="" class="img-fluid mb-3 img_features"
-                                             style="height: 140px; width: 140px;"/>
-                                        <h4 class="card-title font-weight-bold">Features Title</h4>
-                                        <p class="card-text">
-                                            Recording employee career journey in the company
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="card cardproduct shadow border-0 mb-3 col-12 col-sm-6 col-md-4 col-lg-3">
-                                    <div class="card-body text-center">
-                                        <img src="http://drwiam.com/wp-content/uploads/2016/10/orionthemes-placeholder-image-2-1.png"
-                                             alt="" class="img-fluid mb-3 img_features"
-                                             style="height: 140px; width: 140px;"/>
-                                        <h4 class="card-title font-weight-bold">Features Title</h4>
-                                        <p class="card-text">
-                                            Integrating several attendance devices such as finger print machines, mobile
-                                            attendance is an integrated Em-HR system
-                                        </p>
-                                    </div>
-                                </div>
+                                <a class="carousel-control-prev" href="#recipeCarousel" data-slide="prev">
+                                    <span class="carousel-control-prev-icon"></span>
+                                </a>
+                                <a class="carousel-control-next" href="#recipeCarousel" data-slide="next">
+                                    <span class="carousel-control-next-icon"></span>
+                                </a>
                             </div>
-
-                            <!--                            <div id="recipeCarousel" class="carousel slide w-100" data-ride="carousel">-->
-                            <!--                                <div class="carousel-inner w-100" role="listbox">-->
-
-                            <!--                                    &lt;!&ndash;                                    <t t-set="product"&ndash;&gt;-->
-                            <!--                                    &lt;!&ndash;                                       t-value="request.env['product.template'].search([],limit=4,order='create_date desc')"/>&ndash;&gt;-->
-
-                            <!--                                    &lt;!&ndash;                                    <t t-foreach="product" t-as="prd">&ndash;&gt;-->
-                            <!--                                    &lt;!&ndash;                                        <div class="card shadow border-0 mb-3 d-block col-3"&ndash;&gt;-->
-                            <!--                                    &lt;!&ndash;                                             style="border-radius: 13px;">&ndash;&gt;-->
-                            <!--                                    &lt;!&ndash;                                            <div class="card-body p-4">&ndash;&gt;-->
-                            <!--                                    &lt;!&ndash;                                                <img src="https://www.em-hr.co.id/landing-page/2019-05-28/Medical%20Reimbursement.png"&ndash;&gt;-->
-                            <!--                                    &lt;!&ndash;                                                     alt="" class="img-fluid d-block mx-auto mb-3"/>&ndash;&gt;-->
-                            <!--                                    &lt;!&ndash;                                                <p class="card-text text-center">Satu&ndash;&gt;-->
-                            <!--                                    &lt;!&ndash;                                                </p>&ndash;&gt;-->
-                            <!--                                    &lt;!&ndash;                                            </div>&ndash;&gt;-->
-                            <!--                                    &lt;!&ndash;                                        </div>&ndash;&gt;-->
-                            <!--                                    &lt;!&ndash;                                    </t>&ndash;&gt;-->
-
-                            <!--                                    <div class="carousel-item active slider-img">-->
-                            <!--                                        <div class="card cardproduct shadow border-0 mb-3 col-12 col-sm-6 col-md-4 col-lg-3">-->
-                            <!--                                            <div class="card-body p-4 text-center">-->
-                            <!--                                                <img src="http://drwiam.com/wp-content/uploads/2016/10/orionthemes-placeholder-image-2-1.png"-->
-                            <!--                                                     alt="" class="img-fluid mb-3 img_features" style="height: 140px; width: 140px;"/>-->
-                            <!--                                                <h4 class="font-weight-bold">Features Title</h4>-->
-                            <!--                                                <label>-->
-                            <!--                                                    Standard modules that are often used in managing human resource-->
-                            <!--                                                </label>-->
-                            <!--                                            </div>-->
-                            <!--                                        </div>-->
-                            <!--                                    </div>-->
-                            <!--                                    <div class="carousel-item slider-img">-->
-                            <!--                                       <div class="card cardproduct shadow border-0 mb-3 col-12 col-sm-6 col-md-4 col-lg-3">-->
-                            <!--                                            <div class="card-body p-4 text-center">-->
-                            <!--                                                <img src="http://drwiam.com/wp-content/uploads/2016/10/orionthemes-placeholder-image-2-1.png"-->
-                            <!--                                                     alt="" class="img-fluid mb-3 img_features" style="height: 140px; width: 140px;"/>-->
-                            <!--                                                <h4 class="font-weight-bold">Features Title</h4>-->
-                            <!--                                                <label>-->
-                            <!--                                                    Standard modules that are often used in managing human resource-->
-                            <!--                                                </label>-->
-                            <!--                                            </div>-->
-                            <!--                                        </div>-->
-                            <!--                                    </div>-->
-                            <!--                                    <div class="carousel-item slider-img">-->
-                            <!--                                        <div class="card cardproduct shadow border-0 mb-3 col-12 col-sm-6 col-md-4 col-lg-3">-->
-                            <!--                                            <div class="card-body p-4 text-center">-->
-                            <!--                                                <img src="http://drwiam.com/wp-content/uploads/2016/10/orionthemes-placeholder-image-2-1.png"-->
-                            <!--                                                     alt="" class="img-fluid mb-3 img_features" style="height: 140px; width: 140px;"/>-->
-                            <!--                                                <h4 class="font-weight-bold">Features Title</h4>-->
-                            <!--                                                <label>-->
-                            <!--                                                    Standard modules that are often used in managing human resource-->
-                            <!--                                                </label>-->
-                            <!--                                            </div>-->
-                            <!--                                        </div>-->
-                            <!--                                    </div>-->
-                            <!--                                    <div class="carousel-item slider-img">-->
-                            <!--                                        <div class="card cardproduct shadow border-0 mb-3 col-12 col-sm-6 col-md-4 col-lg-3">-->
-                            <!--                                            <div class="card-body p-4 text-center">-->
-                            <!--                                                <img src="http://drwiam.com/wp-content/uploads/2016/10/orionthemes-placeholder-image-2-1.png"-->
-                            <!--                                                     alt="" class="img-fluid mb-3 img_features" style="height: 140px; width: 140px;"/>-->
-                            <!--                                                <h4 class="font-weight-bold">Features Title</h4>-->
-                            <!--                                                <label>-->
-                            <!--                                                    Standard modules that are often used in managing human resource-->
-                            <!--                                                </label>-->
-                            <!--                                            </div>-->
-                            <!--                                        </div>-->
-                            <!--                                    </div>-->
-                            <!--                                    <div class="carousel-item slider-img">-->
-                            <!--                                        <div class="card cardproduct shadow border-0 mb-3 col-12 col-sm-6 col-md-4 col-lg-3">-->
-                            <!--                                            <div class="card-body p-4 text-center">-->
-                            <!--                                                <img src="http://drwiam.com/wp-content/uploads/2016/10/orionthemes-placeholder-image-2-1.png"-->
-                            <!--                                                     alt="" class="img-fluid mb-3 img_features" style="height: 140px; width: 140px;"/>-->
-                            <!--                                                <h4 class="font-weight-bold">Features Title</h4>-->
-                            <!--                                                <label>-->
-                            <!--                                                    Standard modules that are often used in managing human resource-->
-                            <!--                                                </label>-->
-                            <!--                                            </div>-->
-                            <!--                                        </div>-->
-                            <!--                                    </div>-->
-                            <!--                                    <div class="carousel-item slider-img">-->
-                            <!--                                       <div class="card cardproduct shadow border-0 mb-3 col-12 col-sm-6 col-md-4 col-lg-3">-->
-                            <!--                                            <div class="card-body p-4 text-center">-->
-                            <!--                                                <img src="http://drwiam.com/wp-content/uploads/2016/10/orionthemes-placeholder-image-2-1.png"-->
-                            <!--                                                     alt="" class="img-fluid mb-3 img_features" style="height: 140px; width: 140px;"/>-->
-                            <!--                                                <h4 class="font-weight-bold">Features Title</h4>-->
-                            <!--                                                <label>-->
-                            <!--                                                    Standard modules that are often used in managing human resource-->
-                            <!--                                                </label>-->
-                            <!--                                            </div>-->
-                            <!--                                        </div>-->
-                            <!--                                    </div>-->
-                            <!--                                </div>-->
-                            <!--                                <a class="carousel-control-prev" href="#recipeCarousel" data-slide="prev">-->
-                            <!--                                    <span class="carousel-control-prev-icon"></span>-->
-                            <!--                                </a>-->
-                            <!--                                <a class="carousel-control-next" href="#recipeCarousel" data-slide="next">-->
-                            <!--                                    <span class="carousel-control-next-icon"></span>-->
-                            <!--                                </a>-->
-                            <!--                            </div>-->
                         </div>
                     </div>
                 </div>
@@ -268,13 +237,49 @@
                         </div>
                         <t t-set="customer" t-value="request.env['emhr.customer'].search([],order='create_date desc')"/>
                         <div class="row">
-                            <t t-foreach="customer" t-as="cst">
-                                <div class="col-12 col-md-12 col-lg-3 col-xl-3">
-                                    <img t-attf-src="data:image/*;base64, {{cst.img_customer}}" alt=""
-                                         class="img-responsive d-block mx-auto mb-3"
-                                         style="height: 130px; width: 150px;"/>
+                            <!--                            <t t-foreach="customer" t-as="cst">-->
+                            <!--                                <div class="col-12 col-md-12 col-lg-3 col-xl-3">-->
+                            <!--                                    <img t-attf-src="data:image/*;base64, {{cst.img_customer}}" alt=""-->
+                            <!--                                         class="img-responsive d-block mx-auto mb-3"-->
+                            <!--                                         style="height: 130px; width: 150px;"/>-->
+                            <!--                                </div>-->
+                            <!--                            </t>-->
+
+                            <div id="recipeCarousel" class="carousel crs slide w-100 mt-3" data-ride="carousel">
+                                <div class="carousel-inner cr-inner w-100" role="listbox">
+                                    <div class="carousel-item cr-item cr-active active">
+                                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                                            <img src="https://test.em-hr.co.id/images/clients/wadah-yad.png" alt=""
+                                                 class="img-responsive img-customer mb-3"/>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item cr-item">
+                                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                                            <img src="https://test.em-hr.co.id/images/clients/tribhakti.png" alt=""
+                                                 class="img-responsive img-customer mb-3"/>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item cr-item">
+                                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                                            <img src="https://test.em-hr.co.id/images/clients/arsari.png" alt=""
+                                                 class="img-responsive img-customer mb-3"/>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item cr-item">
+                                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                                            <img src="https://test.em-hr.co.id/images/clients/aaf.png" alt=""
+                                                 class="img-responsive img-customer mb-3"/>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item cr-item">
+                                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                                            <img src="https://test.em-hr.co.id/images/clients/javandra.png" alt=""
+                                                 class="img-responsive img-customer mb-3"/>
+                                        </div>
+                                    </div>
                                 </div>
-                            </t>
+                            </div>
+
                         </div>
                     </div>
                 </div>

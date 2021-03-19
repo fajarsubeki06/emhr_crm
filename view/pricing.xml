@@ -38,27 +38,719 @@
                         <div class="tab-content" id="pills-tabContent">
                             <div class="tab-pane fade show active" id="pills-silver" role="tabpanel"
                                  aria-labelledby="pills-silver-tab">
-                                <p class="eht-subtile font-weight-bold text-center mb-0">Memiliki kapasitas 1-25 user</p>
+                                <p class="eht-subtile font-weight-bold text-center mb-0">Memiliki kapasitas 1-25 user
+                                </p>
                                 <hr class="eht-line"/>
-                                <t t-call="em-hr_crm.ic_pricing_view"/>
+                                <!--                                <t t-call="em-hr_crm.ic_pricing_view"/>-->
+                                <div class="card shadow" style="border-radius: 13px;">
+                                    <div class="card-header">
+                                        <p class="eht-subtile font-weight-bold text-center mb-0">
+                                            Choose Modules
+                                        </p>
+                                    </div>
+                                    <div class="card-body">
+                                        <form class="pr-1 pl-1">
+                                            <div class="form-group row form-checkbox m-0">
+                                                <div class="col-sm-7">
+                                                    <div class="form-check">
+                                                        <input type="checkbox" id="attendance" name="attendance"
+                                                               class="custom-control-input"/>
+                                                        <label for="attendance" class="custom-control-label">Attendance
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-5">
+                                                    <label class="float-right">2.500.000/Month</label>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row form-checkbox m-0">
+                                                <div class="col-sm-7">
+                                                    <div class="form-check">
+                                                        <input type="checkbox" id="leave" name="leave"
+                                                               class="custom-control-input"/>
+                                                        <label for="leave" class="custom-control-label">Leave</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-5">
+                                                    <label class="float-right">2.500.000/Month</label>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row form-checkbox m-0">
+                                                <div class="col-sm-7">
+                                                    <div class="form-check">
+                                                        <input type="checkbox" id="visit" name="visit"
+                                                               class="custom-control-input"/>
+                                                        <label for="visit" class="custom-control-label">Visit</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-5">
+                                                    <label class="float-right">2.500.000/Month</label>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row form-checkbox m-0">
+                                                <div class="col-sm-7">
+                                                    <div class="form-check">
+                                                        <input type="checkbox" id="timesheet" name="timesheet"
+                                                               class="custom-control-input"/>
+                                                        <label for="timesheet" class="custom-control-label">Timesheet
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-5">
+                                                    <label class="float-right">2.500.000/Month</label>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row form-checkbox m-0">
+                                                <div class="col-sm-7">
+                                                    <div class="form-check">
+                                                        <input type="checkbox" id="overtime" name="overtime"
+                                                               class="custom-control-input"/>
+                                                        <label for="overtime" class="custom-control-label">Overtime
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-5">
+                                                    <label class="float-right">2.500.000/Month</label>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row form-checkbox m-0">
+                                                <div class="col-sm-7">
+                                                    <div class="form-check">
+                                                        <input type="checkbox" id="payment" name="payment"
+                                                               class="custom-control-input"/>
+                                                        <label for="payment" class="custom-control-label">Payment
+                                                            Request
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-5">
+                                                    <label class="float-right">2.500.000/Month</label>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row form-checkbox m-0">
+                                                <div class="col-sm-7">
+                                                    <div class="form-check">
+                                                        <input type="checkbox" id="payslip" name="payslip"
+                                                               class="custom-control-input"/>
+                                                        <label for="payslip" class="custom-control-label">Payslip
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-5">
+                                                    <label class="float-right">2.500.000/Month</label>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row form-checkbox m-0">
+                                                <div class="col-sm-7">
+                                                    <div class="form-check">
+                                                        <input type="checkbox" id="businesstrip" name="businesstrip"
+                                                               class="custom-control-input"/>
+                                                        <label for="businesstrip" class="custom-control-label">Business
+                                                            Trip
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-5">
+                                                    <label class="float-right">2.500.000/Month</label>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row form-checkbox m-0">
+                                                <div class="col-sm-7">
+                                                    <div class="form-check">
+                                                        <input type="checkbox" id="medical" name="medical"
+                                                               class="custom-control-input"/>
+                                                        <label for="medical" class="custom-control-label">Medical
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-5">
+                                                    <label class="float-right">2.500.000/Month</label>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row form-checkbox m-0">
+                                                <div class="col-sm-7">
+                                                    <div class="form-check">
+                                                        <input type="checkbox" id="exitinterview" name="exitinterview"
+                                                               class="custom-control-input"/>
+                                                        <label for="exitinterview" class="custom-control-label">Exit
+                                                            Interview
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-5">
+                                                    <label class="float-right">2.500.000/Month</label>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row form-checkbox m-0">
+                                                <div class="col-sm-7">
+                                                    <div class="form-check">
+                                                        <input type="checkbox" id="facility" name="facility"
+                                                               class="custom-control-input"/>
+                                                        <label for="facility" class="custom-control-label">Facility
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-5">
+                                                    <label class="float-right">2.500.000/Month</label>
+                                                </div>
+                                            </div>
+                                            <hr/>
+                                            <div class="form-group row form-checkbox m-0">
+                                                <div class="col-sm-7">
+                                                    <label class="">Sub Total</label>
+                                                </div>
+                                                <div class="col-sm-5">
+                                                    <label class="float-right">Rp. 2.000.000</label>
+                                                </div>
+                                            </div>
+                                            <div class="form-group text-center mb-0">
+                                                <div class="col-12">
+                                                    <button type="button" class="btn btn-success"
+                                                            data-toggle="modal" data-target="#exampleModalCenter">
+                                                        Lanjutkan
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
                             </div>
                             <div class="tab-pane fade" id="pills-gold" role="tabpanel"
                                  aria-labelledby="pills-gold-tab">
-                                <p class="eht-subtile font-weight-bold text-center mb-0">Memiliki kapasitas 1-25 user</p>
+                                <p class="eht-subtile font-weight-bold text-center mb-0">Memiliki kapasitas 1-25 user
+                                </p>
                                 <hr class="eht-line"/>
-                                <t t-call="em-hr_crm.ic_pricing_view"/>
+                                <!--                                <t t-call="em-hr_crm.ic_pricing_view"/>-->
+                                <div class="card shadow" style="border-radius: 13px;">
+                                    <div class="card-header">
+                                        <p class="eht-subtile font-weight-bold text-center mb-0">
+                                            Choose Modules
+                                        </p>
+                                    </div>
+                                    <div class="card-body">
+                                        <form class="pr-1 pl-1">
+                                            <div class="form-group row form-checkbox m-0">
+                                                <div class="col-sm-7">
+                                                    <div class="form-check">
+                                                        <input type="checkbox" id="attendance" name="attendance"
+                                                               class="custom-control-input"/>
+                                                        <label for="attendance" class="custom-control-label">Attendance
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-5">
+                                                    <label class="float-right">2.500.000/Month</label>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row form-checkbox m-0">
+                                                <div class="col-sm-7">
+                                                    <div class="form-check">
+                                                        <input type="checkbox" id="leave" name="leave"
+                                                               class="custom-control-input"/>
+                                                        <label for="leave" class="custom-control-label">Leave</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-5">
+                                                    <label class="float-right">2.500.000/Month</label>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row form-checkbox m-0">
+                                                <div class="col-sm-7">
+                                                    <div class="form-check">
+                                                        <input type="checkbox" id="visit" name="visit"
+                                                               class="custom-control-input"/>
+                                                        <label for="visit" class="custom-control-label">Visit</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-5">
+                                                    <label class="float-right">2.500.000/Month</label>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row form-checkbox m-0">
+                                                <div class="col-sm-7">
+                                                    <div class="form-check">
+                                                        <input type="checkbox" id="timesheet" name="timesheet"
+                                                               class="custom-control-input"/>
+                                                        <label for="timesheet" class="custom-control-label">Timesheet
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-5">
+                                                    <label class="float-right">2.500.000/Month</label>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row form-checkbox m-0">
+                                                <div class="col-sm-7">
+                                                    <div class="form-check">
+                                                        <input type="checkbox" id="overtime" name="overtime"
+                                                               class="custom-control-input"/>
+                                                        <label for="overtime" class="custom-control-label">Overtime
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-5">
+                                                    <label class="float-right">2.500.000/Month</label>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row form-checkbox m-0">
+                                                <div class="col-sm-7">
+                                                    <div class="form-check">
+                                                        <input type="checkbox" id="payment" name="payment"
+                                                               class="custom-control-input"/>
+                                                        <label for="payment" class="custom-control-label">Payment
+                                                            Request
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-5">
+                                                    <label class="float-right">2.500.000/Month</label>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row form-checkbox m-0">
+                                                <div class="col-sm-7">
+                                                    <div class="form-check">
+                                                        <input type="checkbox" id="payslip" name="payslip"
+                                                               class="custom-control-input"/>
+                                                        <label for="payslip" class="custom-control-label">Payslip
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-5">
+                                                    <label class="float-right">2.500.000/Month</label>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row form-checkbox m-0">
+                                                <div class="col-sm-7">
+                                                    <div class="form-check">
+                                                        <input type="checkbox" id="businesstrip" name="businesstrip"
+                                                               class="custom-control-input"/>
+                                                        <label for="businesstrip" class="custom-control-label">Business
+                                                            Trip
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-5">
+                                                    <label class="float-right">2.500.000/Month</label>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row form-checkbox m-0">
+                                                <div class="col-sm-7">
+                                                    <div class="form-check">
+                                                        <input type="checkbox" id="medical" name="medical"
+                                                               class="custom-control-input"/>
+                                                        <label for="medical" class="custom-control-label">Medical
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-5">
+                                                    <label class="float-right">2.500.000/Month</label>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row form-checkbox m-0">
+                                                <div class="col-sm-7">
+                                                    <div class="form-check">
+                                                        <input type="checkbox" id="exitinterview" name="exitinterview"
+                                                               class="custom-control-input"/>
+                                                        <label for="exitinterview" class="custom-control-label">Exit
+                                                            Interview
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-5">
+                                                    <label class="float-right">2.500.000/Month</label>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row form-checkbox m-0">
+                                                <div class="col-sm-7">
+                                                    <div class="form-check">
+                                                        <input type="checkbox" id="facility" name="facility"
+                                                               class="custom-control-input"/>
+                                                        <label for="facility" class="custom-control-label">Facility
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-5">
+                                                    <label class="float-right">2.500.000/Month</label>
+                                                </div>
+                                            </div>
+                                            <hr/>
+                                            <div class="form-group row form-checkbox m-0">
+                                                <div class="col-sm-7">
+                                                    <label class="">Sub Total</label>
+                                                </div>
+                                                <div class="col-sm-5">
+                                                    <label class="float-right">Rp. 2.000.000</label>
+                                                </div>
+                                            </div>
+                                            <div class="form-group text-center mb-0">
+                                                <div class="col-12">
+                                                    <button type="button" class="btn btn-success"
+                                                            data-toggle="modal" data-target="#exampleModalCenter">
+                                                        Lanjutkan
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
                             </div>
                             <div class="tab-pane fade" id="pills-platinum" role="tabpanel"
                                  aria-labelledby="pills-platinum-tab">
-                                <p class="eht-subtile font-weight-bold text-center mb-0">Memiliki kapasitas 1-25 user</p>
+                                <p class="eht-subtile font-weight-bold text-center mb-0">Memiliki kapasitas 1-25 user
+                                </p>
                                 <hr class="eht-line"/>
-                                <t t-call="em-hr_crm.ic_pricing_view"/>
+                                <!--                                <t t-call="em-hr_crm.ic_pricing_view"/>-->
+                                <div class="card shadow" style="border-radius: 13px;">
+                                    <div class="card-header">
+                                        <p class="eht-subtile font-weight-bold text-center mb-0">
+                                            Choose Modules
+                                        </p>
+                                    </div>
+                                    <div class="card-body">
+                                        <form class="pr-1 pl-1">
+                                            <div class="form-group row form-checkbox m-0">
+                                                <div class="col-sm-7">
+                                                    <div class="form-check">
+                                                        <input type="checkbox" id="attendance" name="attendance"
+                                                               class="custom-control-input"/>
+                                                        <label for="attendance" class="custom-control-label">Attendance
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-5">
+                                                    <label class="float-right">2.500.000/Month</label>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row form-checkbox m-0">
+                                                <div class="col-sm-7">
+                                                    <div class="form-check">
+                                                        <input type="checkbox" id="leave" name="leave"
+                                                               class="custom-control-input"/>
+                                                        <label for="leave" class="custom-control-label">Leave</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-5">
+                                                    <label class="float-right">2.500.000/Month</label>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row form-checkbox m-0">
+                                                <div class="col-sm-7">
+                                                    <div class="form-check">
+                                                        <input type="checkbox" id="visit" name="visit"
+                                                               class="custom-control-input"/>
+                                                        <label for="visit" class="custom-control-label">Visit</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-5">
+                                                    <label class="float-right">2.500.000/Month</label>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row form-checkbox m-0">
+                                                <div class="col-sm-7">
+                                                    <div class="form-check">
+                                                        <input type="checkbox" id="timesheet" name="timesheet"
+                                                               class="custom-control-input"/>
+                                                        <label for="timesheet" class="custom-control-label">Timesheet
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-5">
+                                                    <label class="float-right">2.500.000/Month</label>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row form-checkbox m-0">
+                                                <div class="col-sm-7">
+                                                    <div class="form-check">
+                                                        <input type="checkbox" id="overtime" name="overtime"
+                                                               class="custom-control-input"/>
+                                                        <label for="overtime" class="custom-control-label">Overtime
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-5">
+                                                    <label class="float-right">2.500.000/Month</label>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row form-checkbox m-0">
+                                                <div class="col-sm-7">
+                                                    <div class="form-check">
+                                                        <input type="checkbox" id="payment" name="payment"
+                                                               class="custom-control-input"/>
+                                                        <label for="payment" class="custom-control-label">Payment
+                                                            Request
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-5">
+                                                    <label class="float-right">2.500.000/Month</label>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row form-checkbox m-0">
+                                                <div class="col-sm-7">
+                                                    <div class="form-check">
+                                                        <input type="checkbox" id="payslip" name="payslip"
+                                                               class="custom-control-input"/>
+                                                        <label for="payslip" class="custom-control-label">Payslip
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-5">
+                                                    <label class="float-right">2.500.000/Month</label>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row form-checkbox m-0">
+                                                <div class="col-sm-7">
+                                                    <div class="form-check">
+                                                        <input type="checkbox" id="businesstrip" name="businesstrip"
+                                                               class="custom-control-input"/>
+                                                        <label for="businesstrip" class="custom-control-label">Business
+                                                            Trip
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-5">
+                                                    <label class="float-right">2.500.000/Month</label>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row form-checkbox m-0">
+                                                <div class="col-sm-7">
+                                                    <div class="form-check">
+                                                        <input type="checkbox" id="medical" name="medical"
+                                                               class="custom-control-input"/>
+                                                        <label for="medical" class="custom-control-label">Medical
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-5">
+                                                    <label class="float-right">2.500.000/Month</label>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row form-checkbox m-0">
+                                                <div class="col-sm-7">
+                                                    <div class="form-check">
+                                                        <input type="checkbox" id="exitinterview" name="exitinterview"
+                                                               class="custom-control-input"/>
+                                                        <label for="exitinterview" class="custom-control-label">Exit
+                                                            Interview
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-5">
+                                                    <label class="float-right">2.500.000/Month</label>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row form-checkbox m-0">
+                                                <div class="col-sm-7">
+                                                    <div class="form-check">
+                                                        <input type="checkbox" id="facility" name="facility"
+                                                               class="custom-control-input"/>
+                                                        <label for="facility" class="custom-control-label">Facility
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-5">
+                                                    <label class="float-right">2.500.000/Month</label>
+                                                </div>
+                                            </div>
+                                            <hr/>
+                                            <div class="form-group row form-checkbox m-0">
+                                                <div class="col-sm-7">
+                                                    <label class="">Sub Total</label>
+                                                </div>
+                                                <div class="col-sm-5">
+                                                    <label class="float-right">Rp. 2.000.000</label>
+                                                </div>
+                                            </div>
+                                            <div class="form-group text-center mb-0">
+                                                <div class="col-12">
+                                                    <button type="button" class="btn btn-success"
+                                                            data-toggle="modal" data-target="#exampleModalCenter">
+                                                        Lanjutkan
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
                             </div>
                             <div class="tab-pane fade" id="pills-custom" role="tabpanel"
                                  aria-labelledby="pills-custom-tab">
-                                <p class="eht-subtile font-weight-bold text-center mb-0">Memiliki kapasitas 1-25 user</p>
+                                <p class="eht-subtile font-weight-bold text-center mb-0">Memiliki kapasitas 1-25 user
+                                </p>
                                 <hr class="eht-line"/>
-                                <t t-call="em-hr_crm.ic_pricing_view"/>
+                                <!--                                <t t-call="em-hr_crm.ic_pricing_view"/>-->
+                                <div class="card shadow" style="border-radius: 13px;">
+                                    <div class="card-header">
+                                        <p class="eht-subtile font-weight-bold text-center mb-0">
+                                            Choose Modules
+                                        </p>
+                                    </div>
+                                    <div class="card-body">
+                                        <form class="pr-1 pl-1">
+                                            <div class="form-group row form-checkbox m-0">
+                                                <div class="col-sm-7">
+                                                    <div class="form-check">
+                                                        <input type="checkbox" id="attendance" name="attendance"
+                                                               class="custom-control-input"/>
+                                                        <label for="attendance" class="custom-control-label">Attendance
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-5">
+                                                    <label class="float-right">2.500.000/Month</label>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row form-checkbox m-0">
+                                                <div class="col-sm-7">
+                                                    <div class="form-check">
+                                                        <input type="checkbox" id="leave" name="leave"
+                                                               class="custom-control-input"/>
+                                                        <label for="leave" class="custom-control-label">Leave</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-5">
+                                                    <label class="float-right">2.500.000/Month</label>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row form-checkbox m-0">
+                                                <div class="col-sm-7">
+                                                    <div class="form-check">
+                                                        <input type="checkbox" id="visit" name="visit"
+                                                               class="custom-control-input"/>
+                                                        <label for="visit" class="custom-control-label">Visit</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-5">
+                                                    <label class="float-right">2.500.000/Month</label>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row form-checkbox m-0">
+                                                <div class="col-sm-7">
+                                                    <div class="form-check">
+                                                        <input type="checkbox" id="timesheet" name="timesheet"
+                                                               class="custom-control-input"/>
+                                                        <label for="timesheet" class="custom-control-label">Timesheet
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-5">
+                                                    <label class="float-right">2.500.000/Month</label>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row form-checkbox m-0">
+                                                <div class="col-sm-7">
+                                                    <div class="form-check">
+                                                        <input type="checkbox" id="overtime" name="overtime"
+                                                               class="custom-control-input"/>
+                                                        <label for="overtime" class="custom-control-label">Overtime
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-5">
+                                                    <label class="float-right">2.500.000/Month</label>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row form-checkbox m-0">
+                                                <div class="col-sm-7">
+                                                    <div class="form-check">
+                                                        <input type="checkbox" id="payment" name="payment"
+                                                               class="custom-control-input"/>
+                                                        <label for="payment" class="custom-control-label">Payment
+                                                            Request
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-5">
+                                                    <label class="float-right">2.500.000/Month</label>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row form-checkbox m-0">
+                                                <div class="col-sm-7">
+                                                    <div class="form-check">
+                                                        <input type="checkbox" id="payslip" name="payslip"
+                                                               class="custom-control-input"/>
+                                                        <label for="payslip" class="custom-control-label">Payslip
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-5">
+                                                    <label class="float-right">2.500.000/Month</label>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row form-checkbox m-0">
+                                                <div class="col-sm-7">
+                                                    <div class="form-check">
+                                                        <input type="checkbox" id="businesstrip" name="businesstrip"
+                                                               class="custom-control-input"/>
+                                                        <label for="businesstrip" class="custom-control-label">Business
+                                                            Trip
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-5">
+                                                    <label class="float-right">2.500.000/Month</label>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row form-checkbox m-0">
+                                                <div class="col-sm-7">
+                                                    <div class="form-check">
+                                                        <input type="checkbox" id="medical" name="medical"
+                                                               class="custom-control-input"/>
+                                                        <label for="medical" class="custom-control-label">Medical
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-5">
+                                                    <label class="float-right">2.500.000/Month</label>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row form-checkbox m-0">
+                                                <div class="col-sm-7">
+                                                    <div class="form-check">
+                                                        <input type="checkbox" id="exitinterview" name="exitinterview"
+                                                               class="custom-control-input"/>
+                                                        <label for="exitinterview" class="custom-control-label">Exit
+                                                            Interview
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-5">
+                                                    <label class="float-right">2.500.000/Month</label>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row form-checkbox m-0">
+                                                <div class="col-sm-7">
+                                                    <div class="form-check">
+                                                        <input type="checkbox" id="facility" name="facility"
+                                                               class="custom-control-input"/>
+                                                        <label for="facility" class="custom-control-label">Facility
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-5">
+                                                    <label class="float-right">2.500.000/Month</label>
+                                                </div>
+                                            </div>
+                                            <hr/>
+                                            <div class="form-group row form-checkbox m-0">
+                                                <div class="col-sm-7">
+                                                    <label class="">Sub Total</label>
+                                                </div>
+                                                <div class="col-sm-5">
+                                                    <label class="float-right">Rp. 2.000.000</label>
+                                                </div>
+                                            </div>
+                                            <div class="form-group text-center mb-0">
+                                                <div class="col-12">
+                                                    <button type="button" class="btn btn-success"
+                                                            data-toggle="modal" data-target="#exampleModalCenter">
+                                                        Lanjutkan
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>

@@ -8,7 +8,7 @@
     'authour': 'PT Empore Hezer Tama',
     'category': 'Business',
     'website': 'https://www.empore.co.id/',
-    'description': 'Customer Relationship Management System',
+    'description': 'Customer Relationship Management System Empore',
     'data': [
         'view/home.xml',
         'view/pricing.xml',

@@ -13,7 +13,7 @@
                     EM-HR menyediakan free trial dengan kapasitas 10 pengguna secara gratis
                 </p>
                 <div class="row justify-content-center mb-5">
-                    <div class="col-md-4 mb-3">
+                    <div class="col-md-5 mb-3">
                         <div class="card shadow" style="border-radius: 13px;">
                             <div class="card-header">
                                 <p class="eht-subtile font-weight-bold text-center mb-0">
@@ -21,95 +21,165 @@
                                 </p>
                             </div>
                             <div class="card-body">
-                                <div class="row justify-content-center">
-                                    <form action="" class="">
-                                        <div class="form-group form-checkbox row mb-0">
-                                            <input type="checkbox" id="attendance" name="attendance"
-                                                   class="custom-control-input"/>
-                                            <label for="attendance" class="custom-control-label">Attendance
-                                            </label>
-                                            <label class="ml-auto">0/Month</label>
-                                        </div>
-                                        <div class="form-group form-checkbox row mb-0">
-                                            <input type="checkbox" id="leave" name="leave"
-                                                   class="custom-control-input"/>
-                                            <label for="leave" class="custom-control-label">Leave</label>
-                                            <label class="ml-auto">0/Month</label>
-                                        </div>
-                                        <div class="form-group form-checkbox row mb-0">
-                                            <input type="checkbox" id="visit" name="visit"
-                                                   class="custom-control-input"/>
-                                            <label for="visit" class="custom-control-label">Visit</label>
-                                            <label class="ml-auto">0/Month</label>
-                                        </div>
-                                        <div class="form-group form-checkbox row mb-0">
-                                            <input type="checkbox" id="timesheet" name="timesheet"
-                                                   class="custom-control-input"/>
-                                            <label for="timesheet" class="custom-control-label">Timesheet
-                                            </label>
-                                            <label class="ml-auto">0/Month</label>
-                                        </div>
-                                        <div class="form-group form-checkbox row mb-0">
-                                            <input type="checkbox" id="overtime" name="overtime"
-                                                   class="custom-control-input"/>
-                                            <label for="overtime" class="custom-control-label">Overtime</label>
-                                            <label class="ml-auto">0/Month</label>
-                                        </div>
-                                        <div class="form-group form-checkbox row mb-0">
-                                            <input type="checkbox" id="payment" name="payment"
-                                                   class="custom-control-input"/>
-                                            <label for="payment" class="custom-control-label">Payment Request
-                                            </label>
-                                            <label class="ml-auto">0/Month</label>
-                                        </div>
-                                        <div class="form-group form-checkbox row mb-0">
-                                            <input type="checkbox" id="payslip" name="payslip"
-                                                   class="custom-control-input"/>
-                                            <label for="payslip" class="custom-control-label">Payslip</label>
-                                            <label class="ml-auto">0/Month</label>
-                                        </div>
-                                        <div class="form-group form-checkbox row mb-0">
-                                            <input type="checkbox" id="businesstrip" name="businesstrip"
-                                                   class="custom-control-input"/>
-                                            <label for="businesstrip" class="custom-control-label">Business
-                                                Trip
-                                            </label>
-                                            <label class="ml-auto">0/Month</label>
-                                        </div>
-                                        <div class="form-group form-checkbox row mb-0">
-                                            <input type="checkbox" id="medical" name="medical"
-                                                   class="custom-control-input"/>
-                                            <label for="medical" class="custom-control-label">Medical</label>
-                                            <label class="ml-auto">0/Month</label>
-                                        </div>
-                                        <div class="form-group form-checkbox row mb-0">
-                                            <input type="checkbox" id="exitinterview" name="exitinterview"
-                                                   class="custom-control-input"/>
-                                            <label for="exitinterview" class="custom-control-label">Exit
-                                                Interview
-                                            </label>
-                                            <label class="ml-auto">0/Month</label>
-                                        </div>
-                                        <div class="form-group form-checkbox row mb-0">
-                                            <input type="checkbox" id="facility" name="facility"
-                                                   class="custom-control-input"/>
-                                            <label for="facility" class="custom-control-label">Facility
-                                            </label>
-                                            <label class="ml-auto">0/Month</label>
-                                        </div>
-                                        <div class="form-group form-checkbox row">
-                                            <label class="">Sub Total</label>
-                                            <label class="ml-auto">Rp. 2.000.000</label>
-                                        </div>
-                                        <div class="form-group text-center mb-0">
-                                            <div class="col-12">
-                                                <button type="button" class="btn btn-success">
-                                                    Buy License
-                                                </button>
+                                <form class="pr-1 pl-1">
+                                    <div class="form-group row form-checkbox m-0">
+                                        <div class="col-sm-7">
+                                            <div class="form-check">
+                                                <input type="checkbox" id="attendance" name="attendance"
+                                                       class="custom-control-input"/>
+                                                <label for="attendance" class="custom-control-label">Attendance
+                                                </label>
                                             </div>
                                         </div>
-                                    </form>
-                                </div>
+                                        <div class="col-sm-5">
+                                            <label class="float-right">0/Month</label>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row form-checkbox m-0">
+                                        <div class="col-sm-7">
+                                            <div class="form-check">
+                                                <input type="checkbox" id="leave" name="leave"
+                                                       class="custom-control-input"/>
+                                                <label for="leave" class="custom-control-label">Leave</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-5">
+                                            <label class="float-right">0/Month</label>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row form-checkbox m-0">
+                                        <div class="col-sm-7">
+                                            <div class="form-check">
+                                                <input type="checkbox" id="visit" name="visit"
+                                                       class="custom-control-input"/>
+                                                <label for="visit" class="custom-control-label">Visit</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-5">
+                                            <label class="float-right">0/Month</label>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row form-checkbox m-0">
+                                        <div class="col-sm-7">
+                                            <div class="form-check">
+                                                <input type="checkbox" id="timesheet" name="timesheet"
+                                                       class="custom-control-input"/>
+                                                <label for="timesheet" class="custom-control-label">Timesheet
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-5">
+                                            <label class="float-right">0/Month</label>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row form-checkbox m-0">
+                                        <div class="col-sm-7">
+                                            <div class="form-check">
+                                                <input type="checkbox" id="overtime" name="overtime"
+                                                       class="custom-control-input"/>
+                                                <label for="overtime" class="custom-control-label">Overtime</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-5">
+                                            <label class="float-right">0/Month</label>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row form-checkbox m-0">
+                                        <div class="col-sm-7">
+                                            <div class="form-check">
+                                                <input type="checkbox" id="payment" name="payment"
+                                                       class="custom-control-input"/>
+                                                <label for="payment" class="custom-control-label">Payment Request
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-5">
+                                            <label class="float-right">0/Month</label>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row form-checkbox m-0">
+                                        <div class="col-sm-7">
+                                            <div class="form-check">
+                                                <input type="checkbox" id="payslip" name="payslip"
+                                                       class="custom-control-input"/>
+                                                <label for="payslip" class="custom-control-label">Payslip</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-5">
+                                            <label class="float-right">0/Month</label>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row form-checkbox m-0">
+                                        <div class="col-sm-7">
+                                            <div class="form-check">
+                                                <input type="checkbox" id="businesstrip" name="businesstrip"
+                                                       class="custom-control-input"/>
+                                                <label for="businesstrip" class="custom-control-label">Business
+                                                    Trip
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-5">
+                                            <label class="float-right">0/Month</label>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row form-checkbox m-0">
+                                        <div class="col-sm-7">
+                                            <div class="form-check">
+                                                <input type="checkbox" id="medical" name="medical"
+                                                       class="custom-control-input"/>
+                                                <label for="medical" class="custom-control-label">Medical</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-5">
+                                            <label class="float-right">0/Month</label>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row form-checkbox m-0">
+                                        <div class="col-sm-7">
+                                            <div class="form-check">
+                                                <input type="checkbox" id="exitinterview" name="exitinterview"
+                                                       class="custom-control-input"/>
+                                                <label for="exitinterview" class="custom-control-label">Exit
+                                                    Interview
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-5">
+                                            <label class="float-right">0/Month</label>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row form-checkbox m-0">
+                                        <div class="col-sm-7">
+                                            <div class="form-check">
+                                                <input type="checkbox" id="facility" name="facility"
+                                                       class="custom-control-input"/>
+                                                <label for="facility" class="custom-control-label">Facility
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-5">
+                                            <label class="float-right">0/Month</label>
+                                        </div>
+                                    </div>
+                                    <hr/>
+                                    <div class="form-group row form-checkbox m-0">
+                                        <div class="col-sm-7">
+                                            <label class="">Sub Total</label>
+                                        </div>
+                                        <div class="col-sm-5">
+                                            <label class="float-right">Rp. 2.000.000</label>
+                                        </div>
+                                    </div>
+                                    <div class="form-group text-center mb-0">
+                                        <div class="col-12">
+                                            <button type="button" class="btn btn-success"
+                                                    data-toggle="modal" data-target="#exampleModalCenter">
+                                                Buy License
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
                             </div>
                         </div>
                     </div>
